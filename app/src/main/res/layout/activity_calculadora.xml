@@ -19,6 +19,7 @@
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
@@ -275,15 +276,17 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:text=","
+                android:text="C"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
-                android:id="@+id/button7"
-                android:layout_weight="1"
+                android:id="@+id/c"
                 style="@style/Widget.AppCompat.Button.Borderless"
+                android:onClick="pulsado"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
                 android:textSize="30sp"
-                android:onClick="leerSigno"
-                android:textColor="@android:color/background_light" />
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:textColor="@android:color/holo_red_dark" />
 
             <Button
                 android:text="0"
@@ -299,17 +302,15 @@
                 android:textColor="@android:color/background_light" />
 
             <Button
-                android:text="="
+                android:text=","
                 android:layout_width="wrap_content"
-                android:id="@+id/igual"
-                android:layout_weight="1"
                 android:layout_height="70dp"
+                android:id="@+id/button7"
+                android:layout_weight="1"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:onClick="leerSigno"
-                android:textStyle="normal|bold"
-                android:textAlignment="center"
                 android:textSize="30sp"
-                android:textColor="@android:color/holo_orange_dark" />
+                android:onClick="leerSigno"
+                android:textColor="@android:color/background_light" />
 
             <Button
                 android:text="/"
@@ -326,36 +327,30 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    </LinearLayout>
 
-            <Button
-                android:text="CE"
-                android:layout_width="wrap_content"
-                android:id="@+id/button8"
-                android:layout_weight="1"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:textStyle="normal|bold"
-                android:textSize="30sp"
-                android:layout_height="60dp"
-                android:textColor="@color/colorPrimary" />
+    <Button
+        android:text="="
+        android:layout_width="match_parent"
+        android:id="@+id/igual"
+        android:layout_weight="1"
+        android:layout_height="70dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:onClick="leerSigno"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="436dp" />
 
-            <Button
-                android:text="C"
-                android:layout_width="wrap_content"
-                android:id="@+id/c"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:onClick="pulsado"
-                android:textStyle="normal|bold"
-                android:textAlignment="center"
-                android:textSize="30sp"
-                android:layout_weight="1"
-                android:layout_height="60dp"
-                android:textColor="@android:color/holo_red_dark" />
-
-        </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
     </LinearLayout>
 
