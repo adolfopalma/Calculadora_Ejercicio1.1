@@ -13,7 +13,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.adolfo.calculadora_ejercicio11.Calculadora"
     android:theme="@style/Animation.AppCompat.Dialog"
-    android:background="@color/colorPrimaryDark">
+    android:background="@color/colorPrimary">
 
     <LinearLayout
         android:orientation="vertical"
